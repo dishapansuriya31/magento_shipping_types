@@ -1,0 +1,2 @@
+
+create a two shipping method PICKUP and R & L add after shipping method  two shipping assiacial add liftget and delivery_apointment checkbox, and add a price for that select shipping method and checkbox price are merge in order summary and show extra information in order page front and back and also add in order confirmation mail after this code liftgate and delivery appointment chaeck box only show foe R & L shipping method and show costom fee in  invoice, credit memo, order view page fronten and backend, order summary 
