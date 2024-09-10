@@ -1,0 +1,8 @@
+<!-- app/code/Kitchen/Shipping/view/frontend/layout/sales_email_order_new.xml -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/email_layout_merged.xsd">
+    <body>
+        <referenceContainer name="order.email.container">
+            <block class="Magento\Sales\Block\Order\Email\Items" name="order.email.items" template="Kitchen_Shipping::order_new.html"/>
+        </referenceContainer>
+    </body>
+</page>

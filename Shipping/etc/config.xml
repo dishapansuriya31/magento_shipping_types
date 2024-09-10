@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <pickupshipping>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>Kitchen\Shipping\Model\Carrier\PickupShipping</model>
+                <name>Pickup Shipping Method</name>
+                <price>50.00</price>
+                <title>Pickup </title>
+                <specificerrmsg>This shipping method is not available. To use this shipping method, please contact us.</specificerrmsg>
+                <handling_type>F</handling_type>
+            </pickupshipping>
+             <randl>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>Kitchen\Shipping\Model\Carrier\RlShipping</model>
+                <name>R l Shipping Shipping Method</name>
+                <price>200.00</price>
+                <title>R And L </title>
+                <specificerrmsg>This shipping method is not available. To use this shipping method, please contact us.</specificerrmsg>
+                <handling_type>F</handling_type>
+            </randl>
+        </carriers>
+    </default>
+</config>
+

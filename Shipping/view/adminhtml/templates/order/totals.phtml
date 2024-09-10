@@ -1,0 +1,8 @@
+<?php
+$customFee = $block->getSource()->getCustomFee();
+if ($customFee): ?>
+    <tr>
+        <td class="label"><strong><?php echo __('Custom Fee'); ?></strong></td>
+        <td class="value"><strong><?php echo $block->getCurrencySymbol() . number_format($customFee, 2); ?></strong></td>
+    </tr>
+<?php endif; ?>

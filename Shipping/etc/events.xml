@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+  <event name="sales_model_service_quote_submit_before">
+    <observer name="kitchen_custom_total_save_to_order" instance="Kitchen\Shipping\Observer\QuoteSubmitBefore" />
+  </event>
+   <event name="sales_order_place_after">
+        <observer name="kitchen_shipping_add_custom_variables" instance="Kitchen\Shipping\Observer\AddCustomVariables"/>
+    </event>
+   <!-- <event name="sales_order_invoice_register">
+        <observer name="custom_fee_sales_order_invoice_register" instance="Kitchen\Shipping\Observer\AddCustomFeeToInvoice"/>
+    </event>
+    <event name="sales_order_place_after">
+        <observer name="custom_fee_sales_order_place_after" instance="Kitchen\Shipping\Observer\AddCustomFeeToOrder"/>
+    </event> -->
+</config>

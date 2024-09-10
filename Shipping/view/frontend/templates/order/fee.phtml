@@ -1,0 +1,17 @@
+<?php
+/** @var \Kitchen\Shipping\Block\Sales\Order\Fee $block */
+
+$order = $block->getOrder();
+$fee = $order->getData('custom_fee');
+?>
+
+<?php if ($fee > 0): ?>
+    <tr>
+        <td colspan="<?= /* @noEscape */ $block->getParentBlock()->getColumnCount() ?>" class="a-right">
+            <strong><?= /* @escapeNotVerified */ __('Custom Extra Fee') ?></strong>
+        </td>
+        <td class="a-right">
+            <?= /* @escapeNotVerified */ $block->getParentBlock()->displayPrices($fee); ?>
+        </td>
+    </tr>
+<?php endif; ?>

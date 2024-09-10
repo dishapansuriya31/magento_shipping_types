@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Model\DefaultConfigProvider">
+        <plugin name="kitchen_checkout_config_provider" type="Kitchen\Shipping\Plugin\CustomShipping" disabled="false" sortOrder="1" />
+    </type>
+    <type name="Magento\Checkout\Block\Cart\Totals">
+        <plugin name="kitchen_shipping_checkout_totals_plugin" type="Kitchen\Shipping\Plugin\QuoteShippingMethodPlugin" sortOrder="10" disabled="false"/>
+    </type>
+    <!-- <type name="Magento\Quote\Model\Quote\Address\Total\Collector">
+    <arguments>
+        <argument name="collectors" xsi:type="array">
+            <item name="fee" xsi:type="object">Kitchen\Shipping\Model\Total\Fee</item>
+        </argument>
+    </arguments>
+    </type> -->
+
+</config>
+
